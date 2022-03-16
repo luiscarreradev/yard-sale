@@ -1,0 +1,15 @@
+{
+  "name": "react-shop",
+  "version": "1.0.0",
+  "description": "react shop",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "react"
+  ],
+  "author": "Luis Carrera <luiscarreramv@gmail.com>",
+  "license": "MIT"
+}
