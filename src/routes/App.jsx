@@ -16,8 +16,8 @@ import '../styles/global.css';
 const App = () => {
 	return (
 		<BrowserRouter>
-			<Routes>
-				<Layout>
+			<Layout>
+				<Routes>
 					<Route exact path="/" element={<Home/>} />
 					<Route exact path="/login" element={<Login/>} />
 					<Route exact path="/password-recovery" element={<PasswordRecovery/>} />
@@ -28,8 +28,8 @@ const App = () => {
 					<Route exact path="/checkout" element={<Checkout/>} />
 					<Route exact path="/orders" element={<Orders/>} />
 					<Route path="*" element={<NotFound/>} />
-				</Layout>
-			</Routes>
+				</Routes>
+			</Layout>
 		</BrowserRouter>
 	);
 }
