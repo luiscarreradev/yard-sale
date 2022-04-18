@@ -1,22 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductItem from '@components/ProductItem';
 import '@styles/ProductList.scss';
+import useGetProducts from '@hooks/useGetProducts';
+const API = 'https://api.escuelajs.co/api/v1/products';
 
-const ProductList = () => {
+const ProductList = () => {  
+  const products = useGetProducts(API);
 	return (
 		<section className="main-container">
 			<div className="ProductList">
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
-				<ProductItem />
+      {
+        products.map(product => (
+				  <ProductItem product={product} key={product.id} />
+        ))
+      }
 			</div>
 		</section>
 	);
