@@ -1,11 +1,15 @@
 @import 'vars';
 
 .Menu {
+  position: absolute;
+  top: 60px;
+  right: 50px;
 	width: 100px;
 	height: auto;
 	border: 1px solid var(--very-light-pink);
 	border-radius: 6px;
 	padding: 20px 20px 0 20px;
+  background-color: var(--white);
 }
 .Menu ul {
 	list-style: none;

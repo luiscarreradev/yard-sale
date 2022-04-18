@@ -6,7 +6,7 @@ const ProductItem = () => {
   const [cart, setCart] = useState([]);
 
   const handleClick = () => {
-    setCart('Hola Mundo')
+    setCart([])
   }
 
 	return (
@@ -18,7 +18,7 @@ const ProductItem = () => {
 					<p>Bike</p>
 				</div>
 				<figure onClick={handleClick}>
-					<img src={addCart} alt="" />
+					<img src={addCart} alt="add to cart" />
 				</figure>
 			</div>
 		</div>
