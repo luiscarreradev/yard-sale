@@ -11,10 +11,12 @@ import CreateAccount from '@pages/CreateAccount';
 import Checkout from '@pages/Checkout';
 import Orders from '@pages/Orders';
 import NotFound from '@pages/NotFound';
+import AppContext from '@context/AppContext';
 import '@styles/global.css';
 
 const App = () => {
 	return (
+    <AppContext.Provider value={}> 
 		<BrowserRouter>
 			<Layout>
 				<Routes>
