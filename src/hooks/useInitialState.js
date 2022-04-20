@@ -20,4 +20,4 @@ const useInitialState = () => {
   }
 }
 
-export dafault useInitialState;
+export default useInitialState;
